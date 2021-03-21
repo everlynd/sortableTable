@@ -1,0 +1,128 @@
+body{
+    font-family: sans-serif;
+    background-color: #e6e6fa;
+
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* #table{
+    background-color: #eee;
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+} */
+
+
+/* #table td{
+    border: 1px solid red;
+    padding: 20px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+}
+
+#table tr{
+    width: 100%;
+} */
+
+.table-sortable .th-sort-asc::after{
+    content: '\25b4';
+}
+.table-sortable .th-sort-desc::after{
+    content: '\25be';
+}
+
+.table-sortable .th-sort-desc::after,
+.table-sortable .th-sort-asc::after {
+    margin-left: 5px;
+}
+
+.table-sortable .th-sort-desc,
+.table-sortable .th-sort-asc {
+    /* background: rgba (0, 0, 0, .1); */
+}
+
+
+.logo th{
+    cursor: pointer;
+
+}
+
+.search{
+    width: 400px;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+label {
+    margin: 0 auto;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+#pagination{
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#pagination li{
+    list-style-type: none;
+    margin: 5px;
+    font-size: ;
+    padding: 5px 10px;
+}
+#pagination li:hover, #pagination li.active{
+cursor: pointer;
+color: #003f7e;
+border: 2px solid #003f7e;
+border-radius: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: table-row;
+}
+
+.table_dark {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    width: 640px;
+    text-align: left;
+    border-collapse: collapse;
+    background: #252F48;
+    margin: 10px auto;
+  }
+  .table_dark th {
+    color: #EDB749;
+    border-bottom: 1px solid #37B5A5;
+    padding: 12px 17px;
+  }
+  .table_dark td {
+    color: #CAD4D6;
+    border-bottom: 1px solid #37B5A5;
+    border-right:1px solid #37B5A5;
+    padding: 7px 17px;
+  }
+  .table_dark tr:last-child td {
+    border-bottom: none;
+  }
+  .table_dark td:last-child {
+    border-right: none;
+  }
+  .table_dark tr:hover td {
+    text-decoration: underline;
+  }
